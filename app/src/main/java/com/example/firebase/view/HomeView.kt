@@ -31,6 +31,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.firebase.model.Mahasiswa
+import com.example.firebase.viewModel.HomeUiState
+import com.example.firebase.viewModel.HomeViewModel
+import com.example.firebase.viewModel.PenyediaViewModel
 
 @RequiresExtension(extension = Build.VERSION_CODES.S, version = 7)
 @OptIn(ExperimentalMaterial3Api::class)
