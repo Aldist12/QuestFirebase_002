@@ -30,6 +30,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.firebase.model.Mahasiswa
 import com.example.firebase.viewModel.HomeUiState
 import com.example.firebase.viewModel.HomeViewModel

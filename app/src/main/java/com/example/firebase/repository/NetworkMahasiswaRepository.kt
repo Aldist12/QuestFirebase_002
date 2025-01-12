@@ -1,6 +1,7 @@
+package com.example.firebase.repository
+
 import android.app.DownloadManager.Query
 import com.example.firebase.model.Mahasiswa
-import com.example.firebase.repository.MahasiswaRepository
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow

@@ -3,7 +3,6 @@ package com.example.firebase.ui.navigation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.firebase.view.HomeScreen
-import com.example.firebase.view.InsertMhsView
 
 @Composable
 fun PengelolaHalaman(
