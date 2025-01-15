@@ -203,6 +203,14 @@ fun MhsCard(
                 text = mahasiswa.alamat,
                 style = MaterialTheme.typography.titleMedium
             )
+            Text(
+                text = mahasiswa.judul_skripsi,
+                style = MaterialTheme.typography.titleMedium
+            )
+            Text(
+                text = mahasiswa.dosen_pembimbing,
+                style = MaterialTheme.typography.titleMedium
+            )
 
         }
     }

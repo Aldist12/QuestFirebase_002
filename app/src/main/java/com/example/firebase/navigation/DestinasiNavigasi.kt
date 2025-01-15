@@ -1,4 +1,4 @@
-package com.example.firebase.ui.navigation
+package com.example.firebase.navigation
 
 interface DestinasiNavigasi{
     val route: String

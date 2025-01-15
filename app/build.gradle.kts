@@ -1,7 +1,7 @@
 plugins {
-    alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.android.application")
     id("com.google.gms.google-services")
 }
 
@@ -60,5 +60,11 @@ dependencies {
 
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    // Import the Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+
+
+// TODO: Add the dependencies for Firebase products you want to use
+// When using the BoM, don't specify versions in Firebase dependencies
+// https://firebase.google.com/docs/android/setup#available-libraries
 }

@@ -33,6 +33,8 @@ class InsertViewModel (
             alamat = if(event.alamat.isNotEmpty()) null else "Nim tidak boleh kosong",
             kelas = if(event.kelas.isNotEmpty()) null else "Nim tidak boleh kosong",
             angkatan = if(event.angkatan.isNotEmpty()) null else "Nim tidak boleh kosong",
+            judul_skripsi = if(event.angkatan.isNotEmpty()) null else "Judul tidak boleh kosong",
+            dosen_pembimbing = if(event.angkatan.isNotEmpty()) null else "Nama Dosen tidak boleh kosong",
         )
 
         uiEvent = uiEvent.copy(isEntryValid = errorState)
@@ -85,6 +87,8 @@ data class FormErrorState(
     val alamat: String? = null,
     val kelas: String? = null,
     val angkatan: String? = null,
+    val judul_skripsi: String? = null,
+    val dosen_pembimbing: String? = null,
 ){
     fun isValid(): Boolean {
         return nim == null
@@ -93,6 +97,8 @@ data class FormErrorState(
                 && alamat == null
                 && kelas == null
                 && angkatan == null
+                && judul_skripsi == null
+                && dosen_pembimbing == null
     }
 }
 
@@ -103,6 +109,8 @@ fun MahasiswaEvent.toMhsModel() : Mahasiswa = Mahasiswa(
     alamat = nim,
     kelas = nim,
     angkatan = nim,
+    judul_skripsi = nama,
+    dosen_pembimbing = nama,
 
     )
 
@@ -113,4 +121,6 @@ data class MahasiswaEvent(
     val alamat: String = "",
     val kelas: String = "",
     val angkatan: String = "",
+    val judul_skripsi: String = "",
+    val dosen_pembimbing: String = "",
 )
